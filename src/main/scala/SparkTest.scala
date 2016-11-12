@@ -12,5 +12,6 @@ object SparkTest extends App{
     spark.stop()
     import spark.implicits._
     val ds1 = (1 to 10).toDF("id")
+    ds1.show()
 }
 
